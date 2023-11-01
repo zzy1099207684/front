@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 此处就是css样式写的地方,是引入,目前暂时写这里直观些 
+        可以根据id设置css样式 这种直接定义在html头部文件里的styple一般就是单个html有特殊要求的样式*/
+        #testId { 
+            color: red;/* 字体颜色 */
+            font-size: 50px; /* 字体大小 */
+        }
+
+        /* 字体属性 */
+        .classtt{
+            color: blueviolet;
+            font-size: 100px;
+            font-weight:900;/* 不是无限加粗字体的 */
+            font-style:normal; /* 斜体 */
+            font-family: "楷体"; /* 字体 */
+            text-align: center; /*文本对齐方式*/
+        }
+        .box1{
+            
+            width:800px;
+            height:800px;
+            background-image: url();
+            background-repeat:no-repeat;
+            background-size: 100%; /*覆盖满整个容器*/
+            /* background-size: 9000px,800px  设置百分比可以设置图片大小 */
+            /* background-size:100%; */
+            background-position: right bottom;
+          
+        }
+        #imgccc{
+            width: 300px;
+            height: 300px;
+        }
+        #text-align{
+            text-align: center;  /*文本对齐方式*/
+            text-decoration:line-through; /*下划线上划线之类的*/
+        }
+        .zzz li{ /*多级样式*/
+            color: blueviolet;
+            font-size: 100px;
+            font-weight:900;/* 不是无限加粗字体的 */
+            font-style:normal; /* 斜体 */
+            font-family: "楷体"; /* 字体 */
+            text-align: center; /*文本对齐方式*/
+        }
+        div>ul>p{ /*多级样式*/
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 标签内写id,然后   style里写#+id名{写css样式}  -->
+    <h3 id="testId">标题内容</h3>
+    <!-- 直接咋再标签内写style样式 -->
+    <span style="background-color:blueviolet; width: 20px; color: azure; font-size: 90px;">直接在标签里写css样式</span>
+
+    <h3 class="classtt">字体属性测试</h3>
+    <div class="box1">
+        <span class="classtt">头部</span>    
+        <img id="imgccc" src="文本对齐方式.png" alt="rrrrrr">
+        <br>
+        <h1 id="text-align">文本对齐方式测试</h1>
+
+        <ul class="zzz">
+            <li>
+                11111
+            </li>
+            <li>
+                11111
+            </li>
+            <li>
+                11111
+            </li>
+            <p>2222222</p>
+        </ul>
+
+
+    </div>
+
+    
+</body>
+</html>

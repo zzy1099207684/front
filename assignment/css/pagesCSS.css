@@ -1,0 +1,234 @@
+.backgroundOut{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    height: 100%; /* 使body铺满整个视口高度 */
+    margin: 0; /* 清除默认的外边距 */
+    background-color: rgb(255, 220, 220);
+    background-size: cover;
+}
+
+.backgroundIn_home{
+    display: flex;
+    width: 1400px;
+    height:1500px;
+    background-color: darkgrey;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(213, 213, 213);
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+    width: 295px;
+    height: 100px;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.blank{
+    display: flex;
+    width: 415px;
+    height: 100px;
+}
+
+.botop{
+    display: flex;
+    width: 220px;
+    height: 100px;
+    /* background-color: rgb(161, 165, 245); */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    font-size: 22px;
+}
+
+
+#CompanyX{
+    height: 272px;
+    display: flex;
+    justify-content: center; 
+    /* background-color: rgb(161, 165, 245); */
+    
+}
+
+
+strong{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    font-size: 75px;
+}
+
+#br{
+    height: 30px;
+    background-color: rgb(140, 21, 21);
+}
+
+.ImgArea{
+    display: flex;
+    width: 1298px;
+    height: 438px;
+    /* background-color: rgb(140, 21, 21); */
+    background-image: url(../img/1.jpg);
+    margin: 0 auto;
+    background-size: 100%;
+}
+
+.textMotify_home{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.textMotify_project{
+    width: 1298px;
+    display: flex;
+    margin: 0 auto;
+    text-align: left;
+    /* background-color: rgb(140, 21, 21); */
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.underShow{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(177, 26, 26);
+    
+}
+
+.showsth{
+    display: flex;
+    width: 413px;
+    height: 957px;
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #ffffff, #999999);
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.showsthIn{
+    display: flex;
+    width: 370px;
+    height: 850px;
+    /* background-color: rgb(170, 210, 24); */
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    
+}
+
+.prjectNumTop{
+    display: flex;
+    height: 60px;
+    font-weight: 800;
+    font-size: 30px;
+    /* background-color: rgb(47, 224, 34); */
+    font-family:'Times New Roman', Times, serif
+}
+
+.prjectNumDown{
+    display: flex;
+    height: 50px;
+    font-weight: 800;
+    /* background-color: rgb(47, 224, 34); */
+    font-size: 30px;
+    text-align: left;
+    color: #939393;
+    font-family:'Times New Roman', Times, serif
+}
+
+.ImgThree{
+    display: flex;
+    width: 370px;
+    height: 490px;
+    /* background-color: rgb(140, 21, 21); */
+    background-image: url(../img/1.jpg);
+    margin: 0 auto;
+    background-size: 100%;
+}
+
+.textMotify_beforProductPic{
+    width: 370px;
+    display: flex;
+    margin: 0 auto;
+    text-align: left;
+    /* background-color: rgb(140, 21, 21); */
+    font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.backgroundIn_products{
+    display: flex;
+    width: 1400px;
+    height:1800px;
+    background-color: darkgrey;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+#occupyModel{
+    width: 70px;
+    height: 500px;
+    /* background-color: rgb(227, 119, 119); */
+}
+
+
+
+#letterModel{
+    display: flex;
+    /* background-color: rgb(227, 119, 119); */
+    flex-direction: column;
+}
+
+#contact{
+    display: flex;
+    /* background-color: rgb(227, 119, 119); */
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    
+}
+
+.contact2{
+    display: flex;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+
+
+#pic{
+    display: flex;
+    width: 780px;
+    height: 465px;
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
