@@ -1,8 +1,8 @@
 .backgroundOut{
     display: flex;
-    justify-content: center; /* 水平居中 */
-    height: 100%; /* 使body铺满整个视口高度 */
-    margin: 0; /* 清除默认的外边距 */
+    justify-content: center;
+    height: 100%; 
+    margin: 0;
     background-color: rgb(255, 220, 220);
     background-size: cover;
 }
