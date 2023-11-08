@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>studnet information</h1>
+    <form id="formInfo">
+        <label>studnetName</label>
+        <input type="text" name="studnetName" id="studnetName" required>
+        <label>studentNumber</label>
+        <input type="text" name="studentNumber" id="studentNumber" required>
+        <br>
+        <button type="button" onclick="displayInfo()">submit</button>
+        
+    </form>
+
+    <script>
+
+        function displayInfo(){
+            var studnetName = document.querySelector("#studnetName").value;
+            let studentNumber = document.querySelector("#studentNumber").value;
+            let message = "name: "+ studnetName+", number is "+studentNumber;
+            alert(message);
+        }
+        
+
+    </script>
+
+</body>
+</html>
