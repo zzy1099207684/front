@@ -6,9 +6,9 @@ function main(){
     let diceNumber = parseInt(document.querySelector("#diceNumber").value);
     let eyeNumber = parseInt(document.querySelector("#eyeNumber").value);
     let allGrounp = out(diceNumber);
-    eyeTimes = getTargetNum(allGrounp, eyeNumber);
-    allTimes = Math.pow(6, diceNumber);
-    result = parseFloat((eyeTimes/allTimes)*100).toFixed(2);
+    let eyeTimes = getTargetNum(allGrounp, eyeNumber);
+    let allTimes = Math.pow(6, diceNumber);
+    let result = parseFloat((eyeTimes/allTimes)*100).toFixed(2);
     document.querySelector("#result").innerHTML = "Probability to get sum "+eyeNumber+" with "+diceNumber+" dice is "+result+"%";
 }
 
@@ -19,7 +19,7 @@ function out(diceNumber){
         if(diceNumber == 0){
             result.push(list);
         }else{
-            for (var i = 1; i <= 6; i++) {
+            for (let i = 1; i <= 6; i++) {
                 inside(diceNumber-1, list+[i]);
             }
         }
@@ -30,9 +30,9 @@ function out(diceNumber){
 
 function getTargetNum(list, targetNum){
     let count = 0;
-    for(key in list){
+    for(const key in list){
         let k = 0;
-        for (i in list[key]){
+        for (const i in list[key]){
             k=k+parseInt(list[key][i]);
         }
         if(k === targetNum){

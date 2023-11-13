@@ -3,7 +3,7 @@
 function leapYearForInterval(){
     let startYear = parseInt(document.querySelector("#startYear").value);
     let endYear = parseInt(document.querySelector("#endYear").value);
-    result = "";
+    let result = "";
     for (let i = 0; i < endYear-startYear+1; i++) {
         if(!isLeapYear(startYear+i)){
             continue; 
