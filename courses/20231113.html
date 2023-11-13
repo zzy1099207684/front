@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <span id="dbck">双击测试</span> -->
+    <img id="dbck" src="../assignment+HTML+CSS/img/1.jpg">
+
+    <!-- <botton id="xxx" onclick="kkk()">qqqq</botton> -->
+    <script>
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
+        console.log(window.location);
+        console.log(window.document);
+        console.log(navigator.userAgent);
+
+        // setTimeout(async function(){
+        //     window.location.href = ("https://www.baidu.com/");
+        // }, 2000)  
+
+
+        function dbclickTest(){
+            window.location.href="https://users.metropolia.fi/~zhiyongz/assignment+HTML+CSS/html/home.html"
+        }
+        
+        document.querySelector("#dbck").addEventListener("dblclick",dbclickTest);
+
+    </script>
+    
+</body>
+</html>
