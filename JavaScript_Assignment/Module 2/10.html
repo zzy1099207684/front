@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="10.js" defer></script>
+</head>
+<body>
+    <span>Write a voting program as described below for small-scale meeting use. (8p)</span>
+    <br>
+    <!-- The program asks for the number of candidates. -->
+    <div id="candidateArea">
+        <label for="candidateNum">input the number of candidates </label>
+        <input type="text" name="candidateNum" id="candidateNum">
+        <button id="creatNamesTable">submit</button>
+        <div id="candidatesName"></div>
+        <button id='submitName' style="display: none;">submitName</button>
+    </div>
+    <div id="candidateAreaShow"></div>
+    
+    <!-- The program asks for the number of voters. -->
+    <div id="voterArea" style="display: none;">
+        <label for="voterNum">input the number of voters</label>
+        <input type="text" name="voterNum" id="voterNum">
+        <button id="creatVoteTable" >submitVoterNumber</button>
+        <div id="voteCandidatesName"></div>
+        <button id="submitVote" style="display: none;">submitVote</button>
+    </div>
+    
+</body>
+
+</html>
