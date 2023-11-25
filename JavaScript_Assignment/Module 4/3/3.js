@@ -30,6 +30,6 @@ async function getRes(){
             document.body.appendChild(creatArticle);
         });
     }
-4}
+}
 
 document.addEventListener('DOMContentLoaded',getRes);
