@@ -117,6 +117,7 @@ picArray.forEach(element => {
   figure.appendChild(figcaption);
 
   let p = document.createElement("p");
+  p.setAttribute('alt',element["title"])
   p.textContent = element["description"];
 
   article.appendChild(p);
@@ -144,7 +145,7 @@ function largetImage(e){
   dialog.showModal();
 }
 
-let pictures = document.querySelector(".card");
+let pictures = document.querySelector("#pictures");
 pictures.addEventListener('click', largetImage);
 
 let close = document.querySelector("#close");
