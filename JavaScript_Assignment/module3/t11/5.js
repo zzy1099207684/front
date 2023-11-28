@@ -122,31 +122,18 @@ picArray.forEach(element => {
 
   article.appendChild(p);
   document.querySelector("#pictures").appendChild(article);
+
+  article.addEventListener('click', function(e){
+    let dialog = document.querySelector("dialog");
+    let largeImg = document.querySelector("dialog img");
+    largeImg.src = element["image"]["large"];
+    largeImg.alt = element["title"];
+    dialog.appendChild(largeImg);
+    dialog.showModal();
+  });
+
 });
 
-
-
-function largetImage(e){
-  let largeImg = null;
-  let clickEle = e.target;
-  let altCk = clickEle.getAttribute('alt');
-  for (const i in picArray) {
-    let element = picArray[i];
-    let alt = element["title"];
-    if(alt === altCk){
-      largeImg = document.querySelector("#largeImg");
-      largeImg.src = element["image"]["large"];
-      largeImg.alt = element["title"];
-      break;
-    }
-  }
-  let dialog = document.querySelector("#dialog");
-  dialog.appendChild(largeImg);
-  dialog.showModal();
-}
-
-let pictures = document.querySelector("#pictures");
-pictures.addEventListener('click', largetImage);
 
 let close = document.querySelector("#close");
 close.addEventListener('click',function(){
