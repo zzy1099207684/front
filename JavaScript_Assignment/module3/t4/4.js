@@ -14,9 +14,11 @@ const students = [
   },
 ];
 
-students.forEach(element => {
+for (let index = 0; index < students.length; index++) {
+  const element = students[index];
   let op = document.createElement("option")
   op.value = element["id"];
   op.textContent = element["name"];
   document.querySelector("#target").appendChild(op);
-});
+  
+}

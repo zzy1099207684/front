@@ -93,10 +93,12 @@ const picArray = [
 ];
 
 // add your code here
-let article = document.createElement("article");
-article.className = "card";
 
-picArray.forEach(element => {
+
+for (let index = 0; index < picArray.length; index++) {
+  let article = document.createElement("article");
+  article.className = "card";
+  const element = picArray[index];
   let h2 = document.createElement("h2");
   h2.textContent = element["title"];
   article.appendChild(h2);
@@ -118,6 +120,6 @@ picArray.forEach(element => {
   p.textContent = element["description"];
 
   article.appendChild(p);
-});
+  document.querySelector("#pictures").appendChild(article);
+}
 
-document.querySelector("#pictures").appendChild(article);
