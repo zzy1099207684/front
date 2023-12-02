@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="2.js"></script>
+    <title>Title</title>
+    <script src="2.js" defer></script>
 </head>
 <body>
-    
+    <form id="query_form" action="https://api.tvmaze.com/search/shows">
+        <input id="query" name="q" type="text">
+        <input type="submit" value="Search">
+    </form>
 </body>
 </html>

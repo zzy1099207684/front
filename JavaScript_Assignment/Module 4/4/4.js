@@ -1,37 +1,41 @@
-async function getRes(){
-    let req = prompt("input search requirement");
-    let res = await fetch("https://api.tvmaze.com/search/shows?q="+req);
-    resultJson = await res.json();
+document.querySelector("#query_form").addEventListener("submit",async function(e){
+    e.preventDefault();
+    let nameInput = document.querySelector("#query").value;
+    let res = await fetch(`https://api.tvmaze.com/search/shows?q=${nameInput}`);
+    let resultJson = await res.json();
+    let results = document.querySelector("#results");
+    results.innerHTML='';
     if(resultJson){
         resultJson.forEach(element => {
             let name = document.createElement('h2')
             if(name){
                 name.innerHTML = element['show']['name'];
             }
-            let url = document.createElement('a')
+            let url = document.createElement('a');
             if(url){
-                url.innerHTML = element['show']['url'];
-                url.setAttribute('herf',element['show']['url'])
+                url.innerHTML = "link";
+                url.setAttribute('href',element['show']['url']);
+                url.setAttribute('target',"_blank");
             }
-            let img = document.createElement('img')
-            // Use https://via.placeholder.com/210x295?text=Not%20Found as the default image.
+            let img = document.createElement('img');
             if(img){
-                pic = element.show.image?.medium;
-                img.setAttribute('src',pic === undefined ? 'https://via.placeholder.com/210x295?text=Not%20Found': pic);
-                img.setAttribute('name', element.show?.name)
+                let pic = "";
+                try{
+                    pic = element['show']['image']['medium'];
+                }catch{
+                    pic = undefined;
+                }
+                img.setAttribute('src',pic ? pic: 'https://via.placeholder.com/210x295?text=Not%20Found');
+                img.setAttribute('alt', element.show?.name);
             }
             let summary = document.createElement('div')
             if(summary){
                 summary.innerHTML = element.show?.summary;
             }
-            let creatDiv = document.createElement('div');
-            creatDiv.id = 'results';
-            let creatArticle = document.createElement('article');
-            creatArticle.append(name,url,img,summary,creatDiv)
-            document.body.innerHTML='';
-            document.body.appendChild(creatArticle);
+            let article = document.createElement('article');
+            
+            article.append(name,url,img,summary);
+            results.appendChild(article);
         });
     }
-}
-
-document.addEventListener('DOMContentLoaded',getRes);
+})
