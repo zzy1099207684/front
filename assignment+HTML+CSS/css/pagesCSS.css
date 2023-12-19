@@ -72,14 +72,14 @@ header{
 }
 
 
-strong{
+h2{
     display: flex;
     justify-content: center; 
     align-items: flex-end;
     font-size: 75px;
 }
 
-#br{
+.class{
     height: 30px;
     background-color: rgb(140, 21, 21);
 }
@@ -157,10 +157,10 @@ strong{
     display: flex;
     height: 50px;
     font-weight: 800;
-    /* background-color: rgb(47, 224, 34); */
+    background-color: rgb(169, 169, 169);
     font-size: 30px;
     text-align: left;
-    color: #939393;
+    color: rgb(200, 200, 200)
     font-family:'Times New Roman', Times, serif
 }
 
